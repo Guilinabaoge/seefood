@@ -16,15 +16,16 @@ function ProductList(props:any){
         }
     },[props.currentStore]);
 
-    return(
+    return (
         <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {items.map((item:any,index:any)=>{
-                return(
+
+                return item.product.categories?.da ?(
                     <div key={index}
                         style={{ width: '33.33%', padding: '10px' ,border: '1px solid black'}}>
                         <Product item={item}/>
                     </div>
-                );
+                ) : <></>;
             
         }
         )}

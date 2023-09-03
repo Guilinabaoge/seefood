@@ -28,9 +28,12 @@ function ParentComponent(){
                     currentStore={currentStore}
                     setCurrentStore={setCurrentStore}/>
             </div>
-            <div className="right-column">
+
+            <div className="right-column" >
+                {!currentStore ? (<p className="explaination">Click on any shop logo in the map to see the expiring foods in that shop. </p>):null}
                 <ProductList currentStore={currentStore}/>
             </div>
+
         </div>
     )
 }

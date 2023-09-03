@@ -13,3 +13,10 @@
   overflow: auto;
   height: 100vh;
 }
+
+.explaination{
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 50vh;
+}

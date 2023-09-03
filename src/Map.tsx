@@ -1,9 +1,9 @@
 import { GoogleMap, Marker, useLoadScript, InfoWindow } from "@react-google-maps/api";
 import './Map.css';
+import NettoLogo from './icons/NETTO_logo.svg'
 
 function Map(props : any) {
     
-
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY || '',
     });
@@ -20,7 +20,6 @@ function Map(props : any) {
 
     const onStoreClick = (e:any,store:any) => {
         props.setCurrentStore(store);
-        console.log(store);
 
     }
 
@@ -39,7 +38,7 @@ function Map(props : any) {
             {props.nettos.map((store : any) => (
                 <Marker 
                     icon={
-                        {url: "http://www.logobook.com/wp-content/uploads/2017/03/NETTO_logo.svg",
+                        {url: NettoLogo,
                         scaledSize: new window.google.maps.Size(25, 25),}}
                     key={store.id} 
                     position={{ lng: store.coordinates[0], lat: store.coordinates[1] }}
