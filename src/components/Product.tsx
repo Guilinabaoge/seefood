@@ -1,4 +1,6 @@
 import NoImage from '../icons/noimage.jpg'
+import '../css/productStyle.css'
+
 function Product(props: any) {
   var imageUrl = props.item.product.image
   if (imageUrl===null) {
@@ -8,10 +10,10 @@ function Product(props: any) {
   const itemname = props.item.product.categories.da
 
   return (
-        <div>
-            <img src={imageUrl} style={{ width: '100%', aspectRatio: '1 / 1' }}></img>
-            <div style={{ width: '100%', aspectRatio: '4 / 1' }}>{itemname}</div>
-            <div style={{ width: '100%', aspectRatio: '8 / 1' }}>{props.item.offer.originalPrice}dkk&rarr;{props.item.offer.newPrice}dkk</div>
+        <div className={'flex'}>
+            <img src={imageUrl} className={'product-image'}></img>
+            <div className={'product-name'}>{itemname}</div>
+            <div className={'product-price'}>{props.item.offer.originalPrice}dkk&rarr;{props.item.offer.newPrice}dkk</div>
         </div>
   );
 }
