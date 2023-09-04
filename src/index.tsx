@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import 'semantic-ui-css/semantic.min.css'
-import ParentComponent from './ParentComponent';
+import ParentComponent from './components/ParentComponent';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(

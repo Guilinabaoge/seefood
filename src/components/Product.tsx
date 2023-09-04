@@ -1,4 +1,4 @@
-import NoImage from './icons/noimage.jpg'
+import NoImage from '../icons/noimage.jpg'
 function Product(props: any) {
   var imageUrl = props.item.product.image
   if (imageUrl===null) {

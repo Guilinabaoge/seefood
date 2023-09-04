@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Map from './Map';
+import Map from '../Map';
 import axios from 'axios';
 import ProductList from './ProductList'
-import './ParentComponent.css'
+import '../css/ParentComponent.css'
 
 function ParentComponent(){
     const [nettos, setNettos] = useState([]); 
