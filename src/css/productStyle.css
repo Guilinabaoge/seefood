@@ -1,0 +1,46 @@
+.flex {
+    /* Mobile-first styles */
+    flex: 1;
+    justify-content: center;
+    margin: 2%;
+  }
+  
+  .product-image {
+    height: 30%;
+    width: 100%;
+    aspect-ratio: '1 / 1'
+  }
+  
+  .product-name {
+    font-size: smaller;
+    aspect-ratio: '4 / 1'
+  } 
+  
+  .product-price {
+    font-size: smaller;
+    aspect-ratio: '8 / 1'
+  } 
+
+
+/* Media query for larger screens (tablets and above) */
+/* @media screen and (min-width: 480px) {
+    .product {
+      text-align: left;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .product-image {
+      max-width: 200px;
+      margin-right: 20px;
+    }
+  
+    .product-name {
+      font-size: 1.5rem;
+    }
+  
+    .product-price {
+      font-size: 1.2rem;
+    }
+  } */
