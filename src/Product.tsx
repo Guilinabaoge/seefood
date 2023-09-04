@@ -9,9 +9,9 @@ function Product(props: any) {
 
   return (
         <div>
-            <img src={imageUrl} style={{ width: '200px', height: '200px' }}></img>
-            <div>{itemname}</div>
-            <div>{props.item.offer.originalPrice}dkk&rarr;{props.item.offer.newPrice}dkk</div>
+            <img src={imageUrl} style={{ width: '100%', aspectRatio: '1 / 1' }}></img>
+            <div style={{ width: '100%', aspectRatio: '4 / 1' }}>{itemname}</div>
+            <div style={{ width: '100%', aspectRatio: '8 / 1' }}>{props.item.offer.originalPrice}dkk&rarr;{props.item.offer.newPrice}dkk</div>
         </div>
   );
 }

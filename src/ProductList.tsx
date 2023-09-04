@@ -17,7 +17,7 @@ function ProductList(props:any){
     },[props.currentStore]);
 
     return (
-        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
         {items.map((item:any,index:any)=>{
 
                 return item.product.categories?.da ?(
