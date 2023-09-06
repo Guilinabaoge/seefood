@@ -3,9 +3,16 @@ import 'semantic-ui-css/semantic.min.css'
 import ParentComponent from './components/ParentComponent';
 import reportWebVitals from './reportWebVitals';
 
+// Add the viewport meta tag to the document head
+const viewportMetaTag = document.createElement('meta');
+viewportMetaTag.name = 'viewport';
+viewportMetaTag.content = 'width=device-width, initial-scale=1.0';
+document.head.appendChild(viewportMetaTag);
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <ParentComponent/>
 );
