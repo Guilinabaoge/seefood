@@ -9,11 +9,17 @@ function Product(props: any) {
 
   const itemname = props.item.product.categories.da
 
+  // console.log(itemname)
+
   return (
-        <div className={'flex'}>
-            <img src={imageUrl} className={'product-image'}></img>
-            <div className={'product-name'}>{itemname}</div>
-            <div className={'product-price'}>{props.item.offer.originalPrice}dkk&rarr;{props.item.offer.newPrice}dkk</div>
+        <div className='product'>
+            <div className='image-container'>
+              <img src={imageUrl} className={'product-image'}></img>
+            </div>
+            <div className='details-container'>
+              <p className={'product-name'}>{itemname}</p>
+              <p className={'product-price'}>{props.item.offer.originalPrice}dkk&rarr;{props.item.offer.newPrice}dkk</p>
+            </div>
         </div>
   );
 }
