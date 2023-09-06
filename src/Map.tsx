@@ -1,5 +1,5 @@
 import { GoogleMap, Marker, useLoadScript, InfoWindow } from "@react-google-maps/api";
-import './Map.css';
+import './css/Map.css';
 import NettoLogo from './icons/NETTO_logo.svg'
 
 function Map(props : any) {
